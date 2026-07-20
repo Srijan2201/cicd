@@ -29,7 +29,7 @@ public class StudentController {
     @DeleteMapping("/{id}")
     public String deleteStudent(@PathVariable Long id){
         service.deleteStudentById(id);
-        return "Student record deleted with id "+id;
+        return "Student deleted with id "+id;
     }
 
     @PatchMapping("/{id}/name")
